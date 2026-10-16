@@ -5,7 +5,10 @@ on:
   schedule:
     # - cron: '30 22 * * *'  # UTC 22:30 = 北京时间次日 06:30
     # - cron: '0 4 * * *'
-    - cron: '0 16 * * *'
+    # - cron: '0 16 * * *'
+
+    - cron: '25 0 * * *'
+      timezone: 'Asia/Shanghai'   # 直接锁定北京时间
 
 jobs:
   signin:
